@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--zca-elements-editor-backgroundColor, var(--zca-elements-bg-depth-1));
+  --cm-textColor: var(--zca-elements-editor-textColor, var(--zca-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--zca-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--zca-elements-editor-gutter-textColor, var(--zca-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--zca-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--zca-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--zca-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--zca-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--zca-elements-editor-cursorColor, var(--zca-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--zca-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--zca-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--zca-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--zca-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--zca-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--zca-elements-editor-panels-borderColor, var(--zca-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--zca-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--zca-elements-editor-search-textColor, var(--zca-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--zca-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --zca-elements-editor-search-closeButton-backgroundColorHover,
+    var(--zca-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --zca-elements-editor-search-closeButton-textColor,
+    var(--zca-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --zca-elements-editor-search-closeButton-textColorHover,
+    var(--zca-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --zca-elements-editor-search-button-backgroundColor,
+    var(--zca-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --zca-elements-editor-search-button-backgroundColorHover,
+    var(--zca-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--zca-elements-editor-search-button-textColor, var(--zca-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --zca-elements-editor-search-button-textColorHover,
+    var(--zca-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--zca-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--zca-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --zca-elements-editor-search-button-borderColorFocused,
+    var(--zca-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--zca-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--zca-elements-editor-search-input-textColor, var(--zca-elements-textPrimary));
+  --cm-search-input-borderColor: var(--zca-elements-editor-search-input-borderColor, var(--zca-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --zca-elements-editor-search-input-borderColorFocused,
+    var(--zca-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--zca-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--zca-elements-editor-tooltip-textColor, var(--zca-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --zca-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --zca-elements-editor-tooltip-textColorSelected,
+    var(--zca-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--zca-elements-editor-tooltip-borderColor, var(--zca-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--zca-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --zca-elements-editor-gutter-textColor: #237893;
+  --zca-elements-editor-gutter-activeLineTextColor: var(--zca-elements-textPrimary);
+  --zca-elements-editor-foldGutter-textColorHover: var(--zca-elements-textPrimary);
+  --zca-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --zca-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --zca-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --zca-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--zca-elements-bg-depth-2);
+  --zca-elements-editor-gutter-textColor: var(--zca-elements-textTertiary);
+  --zca-elements-editor-gutter-activeLineTextColor: var(--zca-elements-textSecondary);
+  --zca-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --zca-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --zca-elements-editor-foldGutter-textColorHover: var(--zca-elements-textPrimary);
+  --zca-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --zca-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --zca-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}

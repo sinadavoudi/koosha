@@ -1,0 +1,251 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --zca-elements-borderColor: theme('colors.alpha.gray.10');
+  --zca-elements-borderColorActive: theme('colors.accent.600');
+
+  --zca-elements-bg-depth-1: theme('colors.white');
+  --zca-elements-bg-depth-2: theme('colors.gray.50');
+  --zca-elements-bg-depth-3: theme('colors.gray.200');
+  --zca-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --zca-elements-textPrimary: theme('colors.gray.950');
+  --zca-elements-textSecondary: theme('colors.gray.600');
+  --zca-elements-textTertiary: theme('colors.gray.500');
+
+  --zca-elements-code-background: theme('colors.gray.100');
+  --zca-elements-code-text: theme('colors.gray.950');
+
+  --zca-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --zca-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --zca-elements-button-primary-text: theme('colors.accent.500');
+
+  --zca-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --zca-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --zca-elements-button-secondary-text: theme('colors.gray.950');
+
+  --zca-elements-button-danger-background: theme('colors.alpha.red.10');
+  --zca-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --zca-elements-button-danger-text: theme('colors.red.500');
+
+  --zca-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --zca-elements-item-contentActive: theme('colors.gray.950');
+  --zca-elements-item-contentAccent: theme('colors.accent.700');
+  --zca-elements-item-contentDanger: theme('colors.red.500');
+  --zca-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --zca-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --zca-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --zca-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --zca-elements-loader-background: theme('colors.alpha.gray.10');
+  --zca-elements-loader-progress: theme('colors.accent.500');
+
+  --zca-elements-artifacts-background: theme('colors.white');
+  --zca-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --zca-elements-artifacts-borderColor: var(--zca-elements-borderColor);
+  --zca-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --zca-elements-artifacts-inlineCode-text: var(--zca-elements-textPrimary);
+
+  --zca-elements-actions-background: theme('colors.white');
+  --zca-elements-actions-code-background: theme('colors.gray.800');
+
+  --zca-elements-messages-background: theme('colors.gray.100');
+  --zca-elements-messages-linkColor: theme('colors.accent.500');
+  --zca-elements-messages-code-background: theme('colors.gray.800');
+  --zca-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --zca-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --zca-elements-icon-success: theme('colors.green.500');
+  --zca-elements-icon-error: theme('colors.red.500');
+  --zca-elements-icon-primary: theme('colors.gray.950');
+  --zca-elements-icon-secondary: theme('colors.gray.600');
+  --zca-elements-icon-tertiary: theme('colors.gray.500');
+
+  --zca-elements-dividerColor: theme('colors.gray.100');
+
+  --zca-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --zca-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --zca-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --zca-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --zca-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --zca-elements-preview-addressBar-background: theme('colors.gray.100');
+  --zca-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --zca-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --zca-elements-preview-addressBar-text: var(--zca-elements-textSecondary);
+  --zca-elements-preview-addressBar-textActive: var(--zca-elements-textPrimary);
+
+  --zca-elements-terminals-background: theme('colors.white');
+  --zca-elements-terminals-buttonBackground: var(--zca-elements-bg-depth-4);
+
+  --zca-elements-cta-background: theme('colors.gray.100');
+  --zca-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --zca-terminal-background: var(--zca-elements-terminals-background);
+  --zca-terminal-foreground: #333333;
+  --zca-terminal-selection-background: #00000040;
+  --zca-terminal-black: #000000;
+  --zca-terminal-red: #cd3131;
+  --zca-terminal-green: #00bc00;
+  --zca-terminal-yellow: #949800;
+  --zca-terminal-blue: #0451a5;
+  --zca-terminal-magenta: #bc05bc;
+  --zca-terminal-cyan: #0598bc;
+  --zca-terminal-white: #555555;
+  --zca-terminal-brightBlack: #686868;
+  --zca-terminal-brightRed: #cd3131;
+  --zca-terminal-brightGreen: #00bc00;
+  --zca-terminal-brightYellow: #949800;
+  --zca-terminal-brightBlue: #0451a5;
+  --zca-terminal-brightMagenta: #bc05bc;
+  --zca-terminal-brightCyan: #0598bc;
+  --zca-terminal-brightWhite: #a5a5a5;
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --zca-elements-borderColor: theme('colors.alpha.white.10');
+  --zca-elements-borderColorActive: theme('colors.accent.500');
+
+  --zca-elements-bg-depth-1: theme('colors.gray.950');
+  --zca-elements-bg-depth-2: theme('colors.gray.900');
+  --zca-elements-bg-depth-3: theme('colors.gray.800');
+  --zca-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --zca-elements-textPrimary: theme('colors.white');
+  --zca-elements-textSecondary: theme('colors.gray.400');
+  --zca-elements-textTertiary: theme('colors.gray.500');
+
+  --zca-elements-code-background: theme('colors.gray.800');
+  --zca-elements-code-text: theme('colors.white');
+
+  --zca-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --zca-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --zca-elements-button-primary-text: theme('colors.accent.500');
+
+  --zca-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --zca-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --zca-elements-button-secondary-text: theme('colors.white');
+
+  --zca-elements-button-danger-background: theme('colors.alpha.red.10');
+  --zca-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --zca-elements-button-danger-text: theme('colors.red.500');
+
+  --zca-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --zca-elements-item-contentActive: theme('colors.white');
+  --zca-elements-item-contentAccent: theme('colors.accent.500');
+  --zca-elements-item-contentDanger: theme('colors.red.500');
+  --zca-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --zca-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --zca-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --zca-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --zca-elements-loader-background: theme('colors.alpha.gray.10');
+  --zca-elements-loader-progress: theme('colors.accent.500');
+
+  --zca-elements-artifacts-background: theme('colors.gray.900');
+  --zca-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --zca-elements-artifacts-borderColor: var(--zca-elements-borderColor);
+  --zca-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --zca-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --zca-elements-actions-background: theme('colors.gray.900');
+  --zca-elements-actions-code-background: theme('colors.gray.800');
+
+  --zca-elements-messages-background: theme('colors.gray.800');
+  --zca-elements-messages-linkColor: theme('colors.accent.500');
+  --zca-elements-messages-code-background: theme('colors.gray.900');
+  --zca-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --zca-elements-messages-inlineCode-text: var(--zca-elements-textPrimary);
+
+  --zca-elements-icon-success: theme('colors.green.400');
+  --zca-elements-icon-error: theme('colors.red.400');
+  --zca-elements-icon-primary: theme('colors.gray.950');
+  --zca-elements-icon-secondary: theme('colors.gray.600');
+  --zca-elements-icon-tertiary: theme('colors.gray.500');
+
+  --zca-elements-dividerColor: theme('colors.gray.100');
+
+  --zca-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --zca-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --zca-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --zca-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --zca-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --zca-elements-preview-addressBar-background: var(--zca-elements-bg-depth-1);
+  --zca-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --zca-elements-preview-addressBar-backgroundActive: var(--zca-elements-bg-depth-1);
+  --zca-elements-preview-addressBar-text: var(--zca-elements-textSecondary);
+  --zca-elements-preview-addressBar-textActive: var(--zca-elements-textPrimary);
+
+  --zca-elements-terminals-background: var(--zca-elements-bg-depth-1);
+  --zca-elements-terminals-buttonBackground: var(--zca-elements-bg-depth-3);
+
+  --zca-elements-cta-background: theme('colors.alpha.white.10');
+  --zca-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --zca-terminal-background: var(--zca-elements-terminals-background);
+  --zca-terminal-foreground: #eff0eb;
+  --zca-terminal-selection-background: #97979b33;
+  --zca-terminal-black: #000000;
+  --zca-terminal-red: #ff5c57;
+  --zca-terminal-green: #5af78e;
+  --zca-terminal-yellow: #f3f99d;
+  --zca-terminal-blue: #57c7ff;
+  --zca-terminal-magenta: #ff6ac1;
+  --zca-terminal-cyan: #9aedfe;
+  --zca-terminal-white: #f1f1f0;
+  --zca-terminal-brightBlack: #686868;
+  --zca-terminal-brightRed: #ff5c57;
+  --zca-terminal-brightGreen: #5af78e;
+  --zca-terminal-brightYellow: #f3f99d;
+  --zca-terminal-brightBlue: #57c7ff;
+  --zca-terminal-brightMagenta: #ff6ac1;
+  --zca-terminal-brightCyan: #9aedfe;
+  --zca-terminal-brightWhite: #f1f1f0;
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 37rem;
+  --chat-min-width: 640px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 1536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--zca-elements-icon-success);
+  --toastify-color-progress-error: var(--zca-elements-icon-error);
+
+  /* Terminal */
+  --zca-elements-terminal-backgroundColor: var(--zca-terminal-background);
+  --zca-elements-terminal-textColor: var(--zca-terminal-foreground);
+  --zca-elements-terminal-cursorColor: var(--zca-terminal-foreground);
+  --zca-elements-terminal-selection-backgroundColor: var(--zca-terminal-selection-background);
+  --zca-elements-terminal-color-black: var(--zca-terminal-black);
+  --zca-elements-terminal-color-red: var(--zca-terminal-red);
+  --zca-elements-terminal-color-green: var(--zca-terminal-green);
+  --zca-elements-terminal-color-yellow: var(--zca-terminal-yellow);
+  --zca-elements-terminal-color-blue: var(--zca-terminal-blue);
+  --zca-elements-terminal-color-magenta: var(--zca-terminal-magenta);
+  --zca-elements-terminal-color-cyan: var(--zca-terminal-cyan);
+  --zca-elements-terminal-color-white: var(--zca-terminal-white);
+  --zca-elements-terminal-color-brightBlack: var(--zca-terminal-brightBlack);
+  --zca-elements-terminal-color-brightRed: var(--zca-terminal-brightRed);
+  --zca-elements-terminal-color-brightGreen: var(--zca-terminal-brightGreen);
+  --zca-elements-terminal-color-brightYellow: var(--zca-terminal-brightYellow);
+  --zca-elements-terminal-color-brightBlue: var(--zca-terminal-brightBlue);
+  --zca-elements-terminal-color-brightMagenta: var(--zca-terminal-brightMagenta);
+  --zca-elements-terminal-color-brightCyan: var(--zca-terminal-brightCyan);
+  --zca-elements-terminal-color-brightWhite: var(--zca-terminal-brightWhite);
+}
