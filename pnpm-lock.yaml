@@ -83,6 +83,9 @@ importers:
       '@remix-run/cloudflare-pages':
         specifier: ^2.10.2
         version: 2.10.2(@cloudflare/workers-types@4.20240620.0)(typescript@5.5.2)
+      '@remix-run/netlify':
+        specifier: ^1.19.3
+        version: 1.19.3(@netlify/functions@1.6.0)
       '@remix-run/node':
         specifier: ^2.16.8
         version: 2.16.8(typescript@5.5.2)
@@ -1135,6 +1138,10 @@ packages:
       nanostores: ^0.9.0 || ^0.10.0
       react: '>=18.0.0'
 
+  '@netlify/functions@1.6.0':
+    resolution: {integrity: sha512-6G92AlcpFrQG72XU8YH8pg94eDnq7+Q0YJhb8x4qNpdGsvuzvrfHWBmqFGp/Yshmv4wex9lpsTRZOocdrA2erQ==}
+    engines: {node: '>=14.0.0'}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1498,6 +1505,16 @@ packages:
       typescript:
         optional: true
 
+  '@remix-run/netlify@1.19.3':
+    resolution: {integrity: sha512-JCrcEXArP4aZKOJ5Au0QWPMnfsiSFdCqpGN1mv1f081E/NGHu0L9BPM9u94ACRGxpsEcXvRrTjKvN8+ZCdDi2g==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      '@netlify/functions': ^0.10.0 || ^0.11.0 || ^1.0.0
+
+  '@remix-run/node@1.19.3':
+    resolution: {integrity: sha512-z5qrVL65xLXIUpU4mkR4MKlMeKARLepgHAk4W5YY3IBXOreRqOGUC70POViYmY7x38c2Ia1NwqL80H+0h7jbMw==}
+    engines: {node: '>=14.0.0'}
+
   '@remix-run/node@2.10.0':
     resolution: {integrity: sha512-hFBt431leCEoN84kVj6BExv60+3KHFORTU2t24igJNtXPNCHH/pujMMKYaSrS3a5oKDTwwqbCmSztTyyr7uFLA==}
     engines: {node: '>=18.0.0'}
@@ -1539,10 +1556,18 @@ packages:
     resolution: {integrity: sha512-O3rHJzAQKamUz1fvE0Qaw0xSFqsA/yafi2iqeE0pvdFtCO1viYx8QL6f3Ln/aCCTLxs68SLf0KPM9eSeM8yBnA==}
     engines: {node: '>=14.0.0'}
 
+  '@remix-run/router@1.7.2':
+    resolution: {integrity: sha512-7Lcn7IqGMV+vizMPoEl5F0XDshcdDYtMI6uJLQdQz5CfZAwy3vvGKYSUk789qndt5dEC4HfSjviSYlSoHGL2+A==}
+    engines: {node: '>=14'}
+
   '@remix-run/serve@2.10.0':
     resolution: {integrity: sha512-JOF2x8HwXo4G5hOqKEUEG7Xm2ZYYL0kZJcWdJVIQxaRN/EmbmJCKGLcW21rZ6VZ/FqpEkSnwmiGFoDkPQ9q6lg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
+
+  '@remix-run/server-runtime@1.19.3':
+    resolution: {integrity: sha512-KzQ+htUsKqpBgKE2tWo7kIIGy3MyHP58Io/itUPvV+weDjApwr9tQr9PZDPA3yAY6rAzLax7BU0NMSYCXWFY5A==}
+    engines: {node: '>=14.0.0'}
 
   '@remix-run/server-runtime@2.10.0':
     resolution: {integrity: sha512-lwgMq3m8U+oz0ZmgOrQeAE3tf6g1LPf2+ff3lgb5xb4bx7bV5VGGwKkzRK4+0fDguHXcW+YcppvdYdnKzQn1YQ==}
@@ -1705,6 +1730,9 @@ packages:
 
   '@types/acorn@4.0.6':
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
+
+  '@types/cookie@0.4.1':
+    resolution: {integrity: sha512-XW/Aa8APYr6jSVVA1y/DEIZX0/GMKLEVekNG727R8cs56ahETkRAy/3DR7+fJyh7oUgGwNQaRfXCun0+KbWY7Q==}
 
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
@@ -2396,6 +2424,10 @@ packages:
   cookie-signature@1.2.1:
     resolution: {integrity: sha512-78KWk9T26NhzXtuL26cIJ8/qNHANyJ/ZYrmEXFzUmhZdjpBv+DlWlOANRTGBt48YcyslsLrj0bMLFTmXvLRCOw==}
     engines: {node: '>=6.6.0'}
+
+  cookie@0.4.2:
+    resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
+    engines: {node: '>= 0.6'}
 
   cookie@0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
@@ -3235,6 +3267,9 @@ packages:
   is-plain-obj@4.1.0:
     resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
     engines: {node: '>=12'}
+
+  is-promise@4.0.0:
+    resolution: {integrity: sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==}
 
   is-reference@3.0.2:
     resolution: {integrity: sha512-v3rht/LgVcsdZa3O2Nqs+NMowLOxeOm7Ay9+/ARQ2F+qEoANRcqrjAZKGN0v8ymUetZGgkp26LTnGT7H0Qo9Pg==}
@@ -6254,6 +6289,10 @@ snapshots:
       nanostores: 0.10.3
       react: 18.3.1
 
+  '@netlify/functions@1.6.0':
+    dependencies:
+      is-promise: 4.0.0
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -6661,6 +6700,23 @@ snapshots:
       typescript: 5.5.2
     optional: true
 
+  '@remix-run/netlify@1.19.3(@netlify/functions@1.6.0)':
+    dependencies:
+      '@netlify/functions': 1.6.0
+      '@remix-run/node': 1.19.3
+
+  '@remix-run/node@1.19.3':
+    dependencies:
+      '@remix-run/server-runtime': 1.19.3
+      '@remix-run/web-fetch': 4.4.2
+      '@remix-run/web-file': 3.1.0
+      '@remix-run/web-stream': 1.1.0
+      '@web3-storage/multipart-parser': 1.0.0
+      abort-controller: 3.0.0
+      cookie-signature: 1.2.1
+      source-map-support: 0.5.21
+      stream-slice: 0.1.2
+
   '@remix-run/node@2.10.0(typescript@5.5.2)':
     dependencies:
       '@remix-run/server-runtime': 2.10.0(typescript@5.5.2)
@@ -6703,6 +6759,8 @@ snapshots:
 
   '@remix-run/router@1.23.0': {}
 
+  '@remix-run/router@1.7.2': {}
+
   '@remix-run/serve@2.10.0(typescript@5.5.2)':
     dependencies:
       '@remix-run/express': 2.10.0(express@4.19.2)(typescript@5.5.2)
@@ -6717,6 +6775,15 @@ snapshots:
       - supports-color
       - typescript
     optional: true
+
+  '@remix-run/server-runtime@1.19.3':
+    dependencies:
+      '@remix-run/router': 1.7.2
+      '@types/cookie': 0.4.1
+      '@web3-storage/multipart-parser': 1.0.0
+      cookie: 0.4.2
+      set-cookie-parser: 2.6.0
+      source-map: 0.7.4
 
   '@remix-run/server-runtime@2.10.0(typescript@5.5.2)':
     dependencies:
@@ -6871,6 +6938,8 @@ snapshots:
   '@types/acorn@4.0.6':
     dependencies:
       '@types/estree': 1.0.5
+
+  '@types/cookie@0.4.1': {}
 
   '@types/cookie@0.6.0': {}
 
@@ -7771,6 +7840,8 @@ snapshots:
   cookie-signature@1.0.6: {}
 
   cookie-signature@1.2.1: {}
+
+  cookie@0.4.2: {}
 
   cookie@0.5.0: {}
 
@@ -8750,6 +8821,8 @@ snapshots:
   is-plain-obj@3.0.0: {}
 
   is-plain-obj@4.1.0: {}
+
+  is-promise@4.0.0: {}
 
   is-reference@3.0.2:
     dependencies:
