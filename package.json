@@ -48,6 +48,8 @@
     "@remix-run/cloudflare": "^2.10.2",
     "@remix-run/cloudflare-pages": "^2.10.2",
     "@remix-run/react": "^2.10.2",
+    "@remix-run/node": "^2.x",
+    "@remix-run/serve": "^2.x",
     "@uiw/codemirror-theme-vscode": "^4.23.0",
     "@unocss/reset": "^0.61.0",
     "@webcontainer/api": "1.3.0-internal.10",
